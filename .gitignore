@@ -1,0 +1,93 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS-specific files
+.DS_Store
+*.AppleDouble
+._*
+
+# Windows-specific files
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+*.lock
+*.pid
+
+# Test results
+coverage/
+*.cover
+*.coverage
+*.py,cover
+.hypothesis/
+
+# Lancedb tables
+*.lance
+
+# Azure Blob and credentials
+*.toml
+
+# Compiled C extensions
+*.o
+*.obj
+*.dll
+*.a
+*.lib
+
+# Editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore Python wheels
+*.whl
+
+# Ignore distribution and build directories
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Ignore pyenv and pipenv
+.python-version
+Pipfile
+Pipfile.lock
+
+# Ignore the output of pytest
+.pytest_cache/
+
+# Ignore coverage tool files
+coverage.xml
+.cache
+htmlcov/
+
+# Ignore data files and large file caches
+*.csv
+*.tsv
+*.parquet
+*.db
+*.sqlite3
+data/
+
+.env
+
+scanai/output
