@@ -1,0 +1,19 @@
+services:
+  purdue-deepresearch-agent-frontend:
+    image: us-central1-docker.pkg.dev/stable-terminus-437915-f3/predictionguard-public/purdue-deepresearch-agent-frontend:latest
+    ports:
+      - "8501:8501"
+    environment:
+      - PREDICTIONGUARD_API_KEY=${PREDICTIONGUARD_API_KEY}
+      - BACKEND_API_URL=http://purdue-deepresearch-agent-api-backend:8080
+    restart: unless-stopped
+    depends_on:
+      - purdue-deepresearch-agent-api-backend
+
+  purdue-deepresearch-agent-api-backend:
+    image: us-central1-docker.pkg.dev/stable-terminus-437915-f3/predictionguard/purdue-deepresearch-agent-api-backend :latest
+    ports:
+      - "8080:8080"
+    environment:
+      - PREDICTIONGUARD_API_KEY=${PREDICTIONGUARD_API_KEY}
+    restart: unless-stopped 
