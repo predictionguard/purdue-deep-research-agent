@@ -1,6 +1,6 @@
 services:
   purdue-deepresearch-agent-frontend:
-    image: us-central1-docker.pkg.dev/stable-terminus-437915-f3/predictionguard-public/purdue-deepresearch-agent-frontend:latest
+    image: us-central1-docker.pkg.dev/stable-terminus-437915-f3/predictionguard/purdue-deepresearch-agent-frontend:latest
     ports:
       - "8501:8501"
     environment:
@@ -11,7 +11,7 @@ services:
       - purdue-deepresearch-agent-api-backend
 
   purdue-deepresearch-agent-api-backend:
-    image: us-central1-docker.pkg.dev/stable-terminus-437915-f3/predictionguard/purdue-deepresearch-agent-api-backend :latest
+    image: us-central1-docker.pkg.dev/stable-terminus-437915-f3/predictionguard/purdue-deepresearch-agent-api-backend:latest
     ports:
       - "8080:8080"
     environment:
